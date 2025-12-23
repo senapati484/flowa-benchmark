@@ -1,0 +1,92 @@
+Benchmark Results - Mon Dec 15 12:58:49 IST 2025
+System: Darwin Sayans-MacBook-Air.local 25.1.0 Darwin Kernel Version 25.1.0: Mon Oct 20 19:34:03 PDT 2025; root:xnu-12377.41.6~2/RELEASE_ARM64_T8112 arm64
+CPU: Apple M2
+Memory: 8.0 GB
+
+=== Java ===
+Starting Java benchmark...
+Run 1: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.075s
+Run 2: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.082s
+Run 3: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.113s
+Run 4: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.081s
+Run 5: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.081s
+
+real	0m1.390s
+user	0m0.459s
+sys	0m0.020s
+
+=== Go ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.111s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.089s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.090s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.090s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.090s
+Benchmark complete!
+
+real	0m3.312s
+user	0m0.533s
+sys	0m0.895s
+
+=== Python ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=8.693s
+Run 2: Sum=4999999950000000, Product=183133701, Time=8.783s
+Run 3: Sum=4999999950000000, Product=183133701, Time=9.215s
+Run 4: Sum=4999999950000000, Product=183133701, Time=8.598s
+Run 5: Sum=4999999950000000, Product=183133701, Time=8.584s
+Benchmark complete!
+
+real	0m44.430s
+user	0m42.849s
+sys	0m0.430s
+
+=== JavaScript ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.367s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.365s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.365s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.360s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.364s
+Benchmark complete!
+
+real	0m1.865s
+user	0m1.825s
+sys	0m0.031s
+
+=== TypeScript ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.364s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.363s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.358s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.357s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.360s
+Benchmark complete!
+
+real	0m1.839s
+user	0m1.810s
+sys	0m0.027s
+
+=== C ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.073s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.049s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.048s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.048s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.049s
+Benchmark complete!
+
+real	0m0.875s
+user	0m0.264s
+sys	0m0.005s
+
+=== Flowa ===
+Parser errors:
+  expected next token to be LPAREN, got IDENTIFIER instead
+  no prefix parse function for :
+  expected next token to be LPAREN, got IDENTIFIER instead
+  no prefix parse function for :
+
+real	0m0.177s
+user	0m0.008s
+sys	0m0.025s

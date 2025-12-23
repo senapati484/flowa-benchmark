@@ -1,0 +1,17 @@
+print("Starting intensive benchmark...")
+
+let run = 0
+while (run < 5) {
+    let sum = 0
+    let i = 0
+    let start = time.now_ms()
+    while (i < 100000000) {
+        sum = sum + i
+        i = i + 1
+    }
+    let elapsed_s = time.since_s(start, 3)
+    print("Run:", run + 1, "Sum:", sum, "Time:", elapsed_s, "s")
+    run = run + 1
+}
+
+print("Benchmark complete!")

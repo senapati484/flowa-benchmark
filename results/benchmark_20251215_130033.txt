@@ -1,0 +1,88 @@
+Benchmark Results - Mon Dec 15 13:00:33 IST 2025
+System: Darwin Sayans-MacBook-Air.local 25.1.0 Darwin Kernel Version 25.1.0: Mon Oct 20 19:34:03 PDT 2025; root:xnu-12377.41.6~2/RELEASE_ARM64_T8112 arm64
+CPU: Apple M2
+Memory: 8.0 GB
+
+=== Java ===
+Starting Java benchmark...
+Run 1: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.073s
+Run 2: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.084s
+Run 3: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.081s
+Run 4: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.080s
+Run 5: Sum=4,999,999,950,000,000, Product=183,133,701, Time=0.080s
+
+real	0m0.446s
+user	0m0.437s
+sys	0m0.017s
+
+=== Go ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.091s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.091s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.091s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.091s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.091s
+Benchmark complete!
+
+real	0m0.684s
+user	0m0.486s
+sys	0m0.094s
+
+=== Python ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=8.242s
+Run 2: Sum=4999999950000000, Product=183133701, Time=8.157s
+Run 3: Sum=4999999950000000, Product=183133701, Time=8.161s
+Run 4: Sum=4999999950000000, Product=183133701, Time=8.271s
+Run 5: Sum=4999999950000000, Product=183133701, Time=9.353s
+Benchmark complete!
+
+real	0m42.240s
+user	0m40.560s
+sys	0m0.635s
+
+=== JavaScript ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.399s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.381s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.367s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.359s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.358s
+Benchmark complete!
+
+real	0m2.031s
+user	0m1.868s
+sys	0m0.046s
+
+=== TypeScript ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=1.400s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.655s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.668s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.521s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.546s
+Benchmark complete!
+
+real	0m4.063s
+user	0m1.964s
+sys	0m0.089s
+
+=== C ===
+Starting intensive benchmark...
+Run 1: Sum=4999999950000000, Product=183133701, Time=0.073s
+Run 2: Sum=4999999950000000, Product=183133701, Time=0.064s
+Run 3: Sum=4999999950000000, Product=183133701, Time=0.071s
+Run 4: Sum=4999999950000000, Product=183133701, Time=0.067s
+Run 5: Sum=4999999950000000, Product=183133701, Time=0.074s
+Benchmark complete!
+
+real	0m2.086s
+user	0m0.338s
+sys	0m0.014s
+
+=== Flowa ===
+Error: undefined variable: run
+
+real	0m0.309s
+user	0m0.012s
+sys	0m0.053s
